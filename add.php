@@ -36,7 +36,13 @@ if(isset($_POST['submit'])) {
         }
     }
 }
-
+    if(array_filter($errors)){
+        //echo "There are errors on the form";
+    } else {
+        //echo "Form is valid";
+        header('Location: index.php');
+    }
+    
 
 ?>
 
